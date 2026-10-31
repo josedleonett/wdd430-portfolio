@@ -1,3 +1,5 @@
+import InfoCard from "../../components/InfoCard";
+
 export default function AboutPage() {
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-12 px-6 py-16 sm:py-24">
@@ -15,18 +17,14 @@ export default function AboutPage() {
       </section>
 
       <section className="grid gap-6 sm:grid-cols-2">
-        <article className="border-t border-slate-800 pt-6">
-          <h2 className="text-xl font-semibold text-slate-100">Current focus</h2>
-          <p className="mt-3 leading-7 text-slate-400">
-            React, Next.js App Router, TypeScript, Tailwind CSS, and Git.
-          </p>
-        </article>
-        <article className="border-t border-slate-800 pt-6">
-          <h2 className="text-xl font-semibold text-slate-100">Course goal</h2>
-          <p className="mt-3 leading-7 text-slate-400">
-            Build and deploy a complete full-stack application with a team.
-          </p>
-        </article>
+        <InfoCard
+          title="Current focus"
+          description="React, Next.js App Router, TypeScript, Tailwind CSS, and Git."
+        />
+        <InfoCard
+          title="Course goal"
+          description="Build and deploy a complete full-stack application with a team."
+        />
       </section>
     </main>
   );

@@ -19,40 +19,40 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-12 px-6 py-16">
-      <section className="rounded-3xl bg-slate-900 px-8 py-16 text-white shadow-xl sm:px-12">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          WDD 430 Portfolio
+    <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-20 px-6 py-16 sm:py-24">
+      <section className="max-w-3xl">
+        <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">
+          WDD 430 portfolio
         </p>
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
-          Building useful web applications with modern full-stack tools.
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-100 sm:text-6xl">
+          Building the next useful thing.
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
           I am Jose Leonett, a web development student learning React,
           Next.js, TypeScript, databases, and deployment.
         </p>
       </section>
 
       <section>
-        <div className="mb-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">
+        <div className="mb-7">
+          <h2 className="text-2xl font-semibold text-slate-100">
             Selected work
-          </p>
-          <h2 className="mt-2 text-3xl font-bold text-slate-900">
-            Projects I am building
           </h2>
+          <p className="mt-2 text-slate-400">Projects I am building.</p>
         </div>
         <ProjectList projects={projects} />
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-        <h2 className="text-2xl font-bold text-slate-900">What I am learning</h2>
-        <p className="mt-3 leading-7 text-slate-600">
+      <section className="max-w-3xl border-t border-slate-800 pt-8">
+        <h2 className="text-2xl font-semibold text-slate-100">
+          What I am learning
+        </h2>
+        <p className="mt-3 leading-7 text-slate-400">
           This portfolio is my first Next.js App Router project. It will grow
           as I learn how frontend pages, backend routes, and databases work
           together.
         </p>
-        <div className="mt-6">
+        <div className="mt-6 max-w-xl">
           <ProjectCard
             title="Next step"
             description="Add persistent data and interactive features during the next course weeks."
